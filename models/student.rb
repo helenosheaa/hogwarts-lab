@@ -39,6 +39,11 @@ attr_reader :id, :first_name, :last_name, :house, :age
     SqlRunner.run( sql, values )
   end
 
+
+  def pretty_name()
+    return "#{@first_name} #{@last_name}"
+  end
+
   def self.delete_all()
     sql = "DELETE FROM students;"
     SqlRunner.run(sql)

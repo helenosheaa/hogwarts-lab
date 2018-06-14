@@ -1,0 +1,23 @@
+
+<br>
+<form method="post" action="/students-houses">
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type ="text" name="first_name" required = "required"/>
+  <label for="last-name">Last Name</label>
+  <input id ="last-name" type="text" name="last_name" required = "required"/>
+
+  <label for="age">Age: </label>
+  <input id="age" type="number" name="age" min="1" placeholder="age"/>
+
+  <label for="house-select">Select a House:</label>
+  <select id="house-select" name="house">
+    <option value="Gryffindor">Gryffindor</option>
+    <option value="Hufflepuff">Hufflepuff</option>
+    <option value="Ravenclaw">Ravenclaw</option>
+    <option value="Slytherin">Slytherin</option>
+  </select>
+
+
+
+  <input type="submit" value="Create Student" />
+</form>
