@@ -48,7 +48,7 @@ attr_reader :id, :first_name, :last_name, :house_id, :age
     sql = "SELECT * FROM houses where id = $1"
     values = [@house_id]
     house = SqlRunner.run(sql, values)
-    return house.first()
+    return House.new(house.first())
 
   end
 
