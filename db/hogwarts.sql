@@ -12,6 +12,5 @@ CREATE TABLE students (
 CREATE TABLE houses (
   id serial4 primary key,
   name varchar(255),
-  logo varchar(255),
-
+  logo varchar(255)
 );

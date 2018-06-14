@@ -11,5 +11,14 @@ class TestHouse < MiniTest::Test
   end
 
 
-  
+  def test_name()
+
+    assert_equal("Gryffindor", @house.name())
+  end
+
+  def test_last_name()
+
+    assert_equal("images/shield_gry.jpg", @house.logo())
+  end
+
 end
