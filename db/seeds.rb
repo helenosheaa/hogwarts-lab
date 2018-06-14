@@ -1,4 +1,5 @@
 require_relative('../models/student')
+require_relative('../models/house')
 require('pry')
 Student.delete_all()
 
@@ -15,6 +16,14 @@ student2 = Student.new({
   "house" => "Gryffindor",
   "age" => 11
 })
+
+house1 = House.new({
+  "name" => "Gryffindor",
+  "logo" => "/images/shield_gry.jpg"
+
+
+  })
+
 
 student1.save
 student2.save
