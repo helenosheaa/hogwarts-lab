@@ -8,6 +8,7 @@ CREATE TABLE houses (
   name varchar(255),
   logo varchar(255)
 );
+
 CREATE TABLE students (
   id serial4 primary key,
   first_name varchar(255),
