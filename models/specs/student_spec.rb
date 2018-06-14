@@ -5,7 +5,7 @@ class TestStudent < MiniTest::Test
 
   def setup
     options = {"id" => 1, "first_name" => "Harry", "last_name" => "Potter",
-      "house" => "Gryffindor", "age" => 11}
+      "house_id" => 1, "age" => 11}
 
       @student = Student.new(options)
   end
@@ -20,8 +20,8 @@ class TestStudent < MiniTest::Test
     assert_equal("Potter", result)
   end
 
-  def test_house()
-    result = @student.house()
+  def test_house_id()
+    result = @student.house_id()
     assert_equal("Gryffindor", result)
   end
 
